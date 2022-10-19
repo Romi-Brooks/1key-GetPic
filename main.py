@@ -23,7 +23,7 @@ def downloadFile():
     while True:
         print("开始下载")
         file_name = wget.download(Url, out=getFileName())
-        print("File Name is: ", getFileName())
+        print("\n文件名: ", getFileName())
         os.rename(file_name, "img/" + file_name)
         time.sleep(5)
 

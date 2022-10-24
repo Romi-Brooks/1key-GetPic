@@ -3,7 +3,6 @@ import time
 import wget
 from datetime import datetime
 
-
 print("api来自MirlKoi,单个ip在60s请求120次会被拉黑")
 print("因此做了延迟,每5s下载一次")
 print("请选择下载的图片类型")
@@ -44,11 +43,11 @@ def mkDir():
         print("文件将下载到img文件夹中")
     else:
         print("文件将下载到img文件夹中")
+mkDir()
 
 def getFileName():
     dt02 = datetime.today()
     return dt02.strftime("%Y-%m-%d-%H-%M-%S") + ".jpg"
-
 
 def downloadFile():
     while True:
